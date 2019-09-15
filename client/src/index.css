@@ -1,0 +1,373 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+.heading {
+  font-size: 30px;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+.div {
+  text-align: center;
+}
+
+.button {
+  margin-top: 40px;
+  box-shadow: 0 0 4px 0px #d4d4d4;
+  padding: 5px 70px;
+  color: #666;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 0 15px 0px #d4d4d4;
+}
+
+/******* Start Navbar *******/
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  z-index: 99999;
+  transition: 0.3s;
+}
+
+.navbar .navbar-brand img {
+  max-width: 100px;
+  max-height: 30px;
+}
+
+.navbar-fixed {
+  position: fixed;
+}
+
+/******* End Navbar *******/
+
+/******* Start Header *******/
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./header.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.header .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000000;
+  opacity: 0.6;
+}
+
+.header .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+
+.header .content span {
+  font-size: 16px;
+}
+
+.header .content h1 {
+  font-size: 60px;
+}
+
+.header .content .arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  font-size: 30px;
+}
+
+.header .content .arrow a {
+  color: #fff;
+}
+
+/******* End Header *******/
+
+/******* Start About-me *******/
+
+.about-me {
+  padding: 70px 0;
+}
+
+.about-me p {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/******* End About-me *******/
+
+/******* Start my-skills *******/
+
+.my-skills {
+  padding: 70px 0;
+  background: #f8f8f8;
+}
+
+.my-skills .progress {
+  height: 15px;
+  font-size: 10px;
+}
+
+.my-skills h6 {
+  font-size: 16px;
+  color: #666;
+}
+
+/******* End my-skills *******/
+
+/******* Start blog-section *******/
+
+.blog-section,
+.service-section,
+.contact-section {
+  padding: 70px 0;
+}
+
+.blog-section a,
+.service-section a {
+  text-decoration: none;
+  color: #666;
+}
+
+.blog-section .card,
+.service-section .card {
+  border: 0;
+  box-shadow: 0 0 4px 0px #d4d4d4;
+  transition: 0.3s;
+}
+
+.blog-section .card:hover,
+.service-section .card:hover {
+  box-shadow: 0 0 15px 0px #d4d4d4;
+}
+
+.blog-section .card-title,
+.service-section .card-title {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.blog {
+  padding: 70px 0;
+}
+
+.blog .post {
+  transition: 0.3s;
+  box-shadow: 0 0 4px 0px #d4d4d4;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.blog .post:hover {
+  box-shadow: 0 0 15px 0px #d4d4d4;
+}
+
+.blog .post img {
+  width: 100%;
+}
+
+.blog .post h2 {
+  padding-top: 30px;
+  font-size: 20px;
+}
+
+.blog .post h2 a {
+  text-decoration: none;
+  color: #666;
+}
+
+.blog .post .more {
+  text-align: right;
+  padding: 20px 20px 0 0;
+}
+
+/******* End blog-section *******/
+
+/******* Start service-section *******/
+
+.service-section {
+  background: #f8f8f8;
+}
+
+.service-section .card-head {
+  font-size: 70px;
+  padding: 20px 0;
+  color: cornflowerblue;
+}
+
+/******* End service-section *******/
+
+/******* Start contact-section *******/
+
+.contact-section .contact-div {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-section .contact-div textarea {
+  height: 200px;
+}
+
+.contact-section .contact-div .div {
+  width: 100%;
+  text-align: right;
+}
+
+.contact-section .contact-div .button {
+  margin-right: 20px;
+}
+
+/******* End contact-section *******/
+
+/******* Start Footer *******/
+
+footer {
+  background: #f8f8f8;
+  font-size: 14px;
+  color: #666;
+}
+
+footer p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+/******* End Footer *******/
+
+/******* Start auth *******/
+
+.auth {
+  width: 40%;
+  margin: 10% auto 0;
+  box-shadow: 0 0 4px 0px #d4d4d4;
+  border-radius: 5px;
+}
+
+.auth .auth-header {
+  padding: 10px 0;
+  border-bottom: 2px solid cornflowerblue;
+  margin-bottom: 20px;
+}
+
+.auth .auth-header h3 {
+  font-size: 25px;
+}
+
+.auth form {
+  padding: 10px 30px 30px;
+}
+
+.auth form input {
+  margin-bottom: 20px;
+}
+
+.auth .div {
+  font-size: 14px;
+  margin-top: 5px;
+  text-align: right;
+}
+
+/******* End auth *******/
+
+/******* Start Dashborad ********/
+
+.dashboard {
+  width: 100%;
+  display: flex;
+  position: relative;
+  left: -130px;
+  transition: 0.3s;
+}
+
+.dashboard-nav {
+  width: 230px;
+  height: 100vh;
+  background: rgb(44, 44, 44);
+  color: #fff;
+}
+
+.dashboard-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-nav ul li a {
+  display: block;
+  padding: 8px 5px 8px 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.dashboard-nav ul li a.active {
+  background: #666;
+}
+
+.dashboard-nav ul li:first-child a.active {
+  background: none;
+}
+
+.dashboard-nav li .icon {
+  float: right;
+  margin: 0 15px;
+  color: #fff;
+}
+
+.dashboard-nav li:first-child {
+  margin: 20px 0 20px;
+}
+
+.open {
+  left: 0;
+}
+
+/* .dashboard-nav li a:hover {
+  text-decoration: none;
+} */
+
+.dashboard-nav li:hover {
+  cursor: pointer;
+  background: #666;
+}
+
+.dashboard-body {
+  width: 100%;
+  padding: 20px;
+}
+
+.dashboard-body .setting-box {
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 0px #d4d4d4;
+}
+
+.dashboard-body .setting-box .setting-title {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #666;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/******* End Dashboard *********/

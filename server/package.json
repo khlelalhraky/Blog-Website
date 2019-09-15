@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server for blog website",
+  "main": "server.js",
+  "author": "khlel alhraky",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm-run-all --parallel server client",
+    "client": "cd ../client && yarn start",
+    "server": "nodemon server"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-validator": "^6.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.0",
+    "npm-run-all": "^4.1.5",
+    "validator": "^11.0.0"
+  }
+}
